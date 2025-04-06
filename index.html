@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>EKAM AI</title>
+</head>
+<body>
+    <div class="navbar1">
+    <h1>magicbricks</h1>
+    <div class="mid">
+        <ul class="menu">
+            <li>
+              <a href="#">Buy</a><i class="fa-solid fa-caret-down"></i>
+              <ul class="dropdown1">
+                <li><a href="#">Houses</a></li>
+                <li><a href="#">Apartments</a></li>
+                <li><a href="#">Commercial</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Rent</a><i class="fa-solid fa-caret-down"></i>
+              <ul class="dropdown1">
+                <li><a href="#">Short Term</a></li>
+                <li><a href="#">Long Term</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Sell</a><i class="fa-solid fa-caret-down"></i>
+              <ul class="dropdown1">
+                <li><a href="#">Post Listing</a></li>
+                <li><a href="#">Agent Support</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Tools & Advice</a><i class="fa-solid fa-caret-down"></i>
+              <ul class="dropdown1">
+                <li><a href="#">Mortgage Calculator</a></li>
+                <li><a href="#">Buying Guide</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">What's New</a><i class="fa-solid fa-caret-down"></i>
+              <ul class="dropdown1">
+                <li><a href="#">New Launches</a></li>
+                <li><a href="#">Market Trends</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Home Loans</a></li>
+            <li>
+              <a href="#">Blog</a><i class="fa-solid fa-caret-down"></i>
+              <ul class="dropdown1">
+                <li><a href="#">Tips & Tricks</a></li>
+                <li><a href="#">Expert Advice</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Help</a><i class="fa-solid fa-caret-down"></i>
+              <ul class="dropdown1">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+    </div>
+    <div class="end">
+        <button class="sign-btn">
+            Sign in<br>
+            <span class="activity-row">
+              <span class="activity-text">My Activity</span>
+              <span class="icon"><i class="fa-solid fa-circle-chevron-down"></i></span>
+            </span>
+          </button>   
+        <div class="post"> Post Property <span>FREE</span></div>
+    </div>
+    </div>
+
+    <div class="main">
+
+   <div class="left">
+  <div class="personal">
+ <div class="head">
+ <h2>Sell or Rent your Property</h2>
+ <P>You are posting this property for <span>FREE!</span></P>
+ </div>
+ <br>
+ <h4 style="margin-bottom:20px;">Personal Details</h4>
+ <div class="radio-row" style="margin-bottom: 20px;">
+  <label for="role">I am</label>
+
+  <div class="radio-option">
+    <input type="radio" id="owner" name="role" value="owner">
+    <label for="owner">Owner</label>
+  </div>
+
+  <div class="radio-option">
+    <input type="radio" id="agent" name="role" value="agent">
+    <label for="agent">Agent</label>
+  </div>
+
+  <div class="radio-option">
+    <input type="radio" id="builder" name="role" value="builder">
+    <label for="builder">Builder</label>
+  </div>
+</div>
+
+<form class="contact-form">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Enter your name" />
+  </div>
+
+  <div class="form-group">
+    <label for="mobile">Mobile</label>
+    <div class="mobile-input">
+      <select class="country-code">
+        <option value="+91">🇮🇳 +91</option>
+        <option value="+1">🇺🇸 +1</option>
+        <option value="+44">🇬🇧 +44</option>
+        <!-- Add more countries if needed -->
+      </select>
+      <input type="tel" id="mobile" placeholder="Enter mobile number" />
+    </div>
+  </div>
+
+  <div class="whatsapp-note">
+    Enter your 
+    <span class="icon"><i class="fa-brands fa-whatsapp"></i></span>
+    WhatsApp No. to get enquiries from buyers and tenants.
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email" />
+  </div>
+</form>
+<br>
+<h4 style="margin-bottom:20px;">Property Details</h4>
+<div class="radio-row">
+  <label for="role">For</label>
+
+  <div class="radio-option">
+    <input type="radio" id="owner" name="role" value="owner">
+    <label for="owner">Sell</label>
+  </div>
+
+  <div class="radio-option">
+    <input type="radio" id="agent" name="role" value="agent">
+    <label for="agent">Rent/Lease</label>
+  </div>
+
+  <div class="radio-option">
+    <input type="radio" id="builder" name="role" value="builder">
+    <label for="builder">PG/Hostel</label>
+  </div>
+</div>
+<div class="dropdown-container">
+
+  <div class="custom-select-wrapper">
+    <select id="property-type" class="custom-select">
+      <option value="" disabled selected>Select Property Type</option>
+      <option value="apartment">Apartment</option>
+      <option value="villa">Villa</option>
+      <option value="plot">Plot</option>
+      <option value="commercial">Commercial</option>
+    </select>
+    <span class="dropdown-icon">▼</span>
+  </div>
+</div>
+<br>
+<h4 style="margin-bottom:20px;">Property Location</h4>
+<form class="contact-form">
+  <div class="form-group">
+    <label for="name">City</label>
+    <input type="text" id="name" placeholder="Enter City" />
+  </div>
+  <div class="form-group">
+    <label for="email">Locality</label>
+    <input type="email" id="email" placeholder="Enter Locality" />
+  </div>
+</form>
+<br><br><br>
+<div class="checkbox-group">
+  <label class="custom-checkbox">
+    <input type="checkbox" />
+    <span class="checkmark"></span>
+    I am posting this property 'exclusively' on Magicbricks
+  </label>
+
+  <label class="custom-checkbox">
+    <input type="checkbox" />
+    <span class="checkmark"></span>
+    I agree to Magicbricks T&amp;C,Privacy Policy and Cookie Policy.
+  </label>
+</div>
+
+  </div>
+
+  <div class="imag">
+ <img src="/EkamAI/2ndpg/images/man-with-home.png">
+  </div>
+   </div>
+
+
+   <div class="right">
+    <h2>How to find the right <span style="color: #00A693;">Tenant</span>?</h2>
+    <div class="box">
+      <div class="inbox">
+        <img src="/EkamAI/2ndpg/images/telephone-call.png" alt="">
+        <div class="text-content">
+          <h4>Respond to tenant enquiry</h4>
+          <p>Connect with the <span style="font-weight:600;">Tenants</span> when they contact on your property.</p>
+          <h5>View upto 5 contact details for FREE!</h5>
+        </div>
+      </div>
+      <div class="divider"></div>
+  
+      <div class="inbox">
+        <img src="/EkamAI/2ndpg/images/man.png" alt="">
+        <div class="text-content">
+          <h4>Connecting with matching tenants</h4>
+          <p>Actively checking for the matching <span style="font-weight:600;">Tenants</span> and connect</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+  
+      <div class="inbox">
+        <img src="/EkamAI/2ndpg/images/smartphone.png" alt="">
+        <div class="text-content">
+          <h4>Download the app</h4>
+          <p>Get notified on all new <span style="font-weight: 600;">Tenants</span> enquiries and connect instantly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" 
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>

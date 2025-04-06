@@ -1,0 +1,586 @@
+.navbar1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px;
+    background-color: #e53935;
+  }
+  
+  .navbar1 h1 {
+    margin: 0;
+    margin-right: 40px;
+    color: white;
+    font-size: 3rem;
+    white-space: nowrap;
+  }
+
+  .navbar1 i{
+    color:white;
+  }
+  
+  .mid {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+  }
+  
+  .menu > li {
+    position: relative;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 12px;
+    font-weight:600;
+  }
+  
+  .menu li:hover > a {
+    background-color: #eee;
+    border-radius: 4px;
+  }
+  
+  .dropdown1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    z-index: 1000;
+  }
+  
+  .dropdown1 li {
+    margin: 0;
+  }
+  
+  .dropdown1 a {
+    padding: 10px 15px;
+    display: block;
+    color: #333;
+  }
+  
+  .menu li:hover .dropdown1 {
+    display: block;
+  }
+  
+  .end {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .sign-btn {
+    padding: 8px 13px;
+    background-color: #e53935;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: left;
+  }
+  
+  .activity-row {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    gap:5px;
+  }
+  
+  .activity-text {
+    font-size: 15px;
+    font-weight: bold;
+
+  }
+  
+  .icon i {
+    font-size: 16px;
+   
+  }
+  
+  
+  .post {
+    display: flex;
+    background-color:white;
+    color: black;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+
+    padding: 10px;
+  }
+  .post span{
+    background-color:yellow;
+    color:black;
+    padding:3px;
+    font-weight:700;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: space-between;
+    padding-left:8em;
+
+    gap: 40px; /* spacing between left and right */
+  }
+  
+
+.right{
+ padding:0px 0px 0px 40px;
+ width:40%;
+ background-color:#eeeeee;
+ height:100vh;
+}
+
+.left {
+  display: flex;
+  flex-direction: row; /* Arrange children in a row */
+  align-items: center; /* Vertically align items */
+  justify-content: space-between; /* Optional: adds space between them */
+  gap: 20px; /* Optional: adds space between elements */
+ /* Optional: for spacing inside the container */
+ padding-top:5rem;
+}
+
+
+
+.personal h4{
+  font-weight:600;
+}
+
+.radio-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.radio-row > label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Style the radio buttons */
+input[type="radio"] {
+  accent-color: #e53935;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: auto;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  border: none;
+  border-bottom: 1px solid #999;
+  outline: none;
+  padding: 6px 4px;
+  font-size: 15px;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+.mobile-input {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.country-code {
+  border: none;
+  border-bottom: 1px solid #999;
+  background: transparent;
+  font-size: 15px;
+  padding: 6px 4px;
+  appearance: none;
+  outline: none;
+}
+
+.whatsapp-note {
+  font-size: 16px;
+  color: #444;
+  background-color: 	
+  #FFFDD0;
+  border:2px solid #FDDA0D;
+  padding: 10px 15px;
+  border-radius: 5px;
+  line-height: 1.4;
+}
+
+.icon {
+  color: green;
+  font-weight: bold;
+  margin: 0 4px;
+}
+.dropdown-container {
+  max-width: 400px;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.dropdown-container label {
+  font-size: 14px;
+  color: #333;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.custom-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select {
+  width: 100%;
+  font-size: 15px;
+  padding: 6px 4px;
+  border: none;
+  border-bottom: 1px solid #999;
+  background: transparent;
+  appearance: none; /* Hide native dropdown arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  color: #333;
+}
+
+.custom-select option {
+  color: #333;
+}
+
+.dropdown-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  pointer-events: none;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: #666;
+}
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 28px;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  height: 18px;
+  width: 18px;
+  background-color: #e53935;
+ 
+}
+
+.custom-checkbox input:checked ~ .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align to top */
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* align top instead of center */
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.personal {
+  flex: 1;
+}
+
+/* === ALIGNMENT FIXES === */
+.personal > *:not(.whatsapp-note):not(.checkbox-group):not(.head) {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  text-align: left;
+}
+
+/* === COLOR CHANGES TO GREY === */
+.personal p,
+.personal label,
+.personal input,
+.personal select,
+.personal option,
+.personal .radio-option label,
+.dropdown-container label {
+  color: grey;
+}
+
+/* Preserve h2, h4 and whatsapp-note original color */
+.personal h2,
+.personal h4 {
+  color: initial;
+}
+
+/* === IMAGE TOP ALIGN === */
+.imag {
+  display: flex;
+  align-items: flex-start; /* image to top */
+  justify-content: center;
+}
+
+.imag img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Optional spacing fix for .head */
+.head {
+  margin-bottom: 1rem;
+}
+
+
+.head span{
+  background-color:	#FFDF00;
+  color:black;
+  border-radius:3px;
+  padding:5px;
+  font-weight:700;
+}
+.head h2{
+  font-weight:600;
+}
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid black;
+    width: 80%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color:white;
+  }
+  
+  .inbox {
+    display: flex;
+    align-items: flex-start; /* align top of text with image */
+    gap: 15px;
+  }
+  
+  .box img {
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 6px;
+  }
+  
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .box h4 {
+    color: #00A693;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .box h5 {
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .box p {
+    margin: 0;
+  }
+  
+  .divider {
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 30px;
+  }
+  
+
+  /* === MOBILE RESPONSIVENESS === */
+@media (max-width: 768px) {
+
+  .navbar1 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navbar1 h1 {
+    font-size: 2rem;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .mid {
+    justify-content: flex-start;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .end {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .main {
+    flex-direction: column;
+    padding-left: 1em;
+    gap: 20px;
+  }
+
+  .right {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .left {
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 2rem;
+  }
+
+  .imag img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .contact-form,
+  .dropdown-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1em;
+  }
+
+  .checkbox-group {
+    padding: 0 1em;
+  }
+
+  .box {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .inbox {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .post {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .radio-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .custom-checkbox {
+    padding-left: 24px;
+  }
+
+  .dropdown-icon {
+    right: 6px;
+  }
+
+  .sign-btn {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .activity-text {
+    font-size: 14px;
+  }
+
+  .whatsapp-note {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
